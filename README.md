@@ -63,7 +63,8 @@ python3 train.py
 
 #reference
 
-https://github.com/eragonruan/text-detection-ctpn
-https://github.com/AstarLight/Lets_OCR/tree/master/detector/ctpn
+ https://github.com/eragonruan/text-detection-ctpn
+
+ https://github.com/AstarLight/Lets_OCR/tree/master/detector/ctpn
 
 
