@@ -49,12 +49,12 @@ python3 train.py
 ```
 ***
 # some results
-<img src="./no_side_refinement_result/006_result_no.jpg" width=320 height=480 />  <img src="./side_refinement_result/006_result.jpg" width=320 height=480 />
-<img src="./no_side_refinement_result/007_result_no.jpg" width=320 height=480 />  <img src="./side_refinement_result/007_result.jpg" width=320 height=480 />
-<img src="./no_side_refinement_result/008_result_no.jpg" width=320 height=480 />  <img src="./side_refinement_result/008_result.jpg" width=320 height=480 />
-<img src="./no_side_refinement_result/009_result_no.jpg" width=320 height=480 />  <img src="./side_refinement_result/009_result.jpg" width=320 height=480 />
-<img src="./no_side_refinement_result/010_result_no.jpg" width=320 height=480 />  <img src="./side_refinement_result/010_result.jpg" width=320 height=480 />
-<img src="./no_side_refinement_result/1112_result_no.jpg" width=320 height=240 />  <img src="./side_refinement_result/1112_result.jpg" width=320 height=240 />
+<img src="./no_side_refinement_result/006_result_no.jpg" width=320 height=480 />     <img src="./side_refinement_result/006_result.jpg" width=320 height=480 />
+<img src="./no_side_refinement_result/007_result_no.jpg" width=320 height=480 />     <img src="./side_refinement_result/007_result.jpg" width=320 height=480 />
+<img src="./no_side_refinement_result/008_result_no.jpg" width=320 height=480 />     <img src="./side_refinement_result/008_result.jpg" width=320 height=480 />
+<img src="./no_side_refinement_result/009_result_no.jpg" width=320 height=480 />     <img src="./side_refinement_result/009_result.jpg" width=320 height=480 />
+<img src="./no_side_refinement_result/010_result_no.jpg" width=320 height=480 />     <img src="./side_refinement_result/010_result.jpg" width=320 height=480 />
+<img src="./no_side_refinement_result/1112_result_no.jpg" width=320 height=240 />    <img src="./side_refinement_result/1112_result.jpg" width=320 height=240 />
 
 
 
