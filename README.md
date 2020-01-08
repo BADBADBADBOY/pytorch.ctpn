@@ -1,6 +1,9 @@
 # text-detection-ctpn-pytorch
 
 
+
+######my blog about CTPN [blog](https://blog.csdn.net/fxwfxw7037681/article/details/103897907)
+
 # setup
 nms and bbox utils are written in cython, you have to build the library first.
 ```shell
