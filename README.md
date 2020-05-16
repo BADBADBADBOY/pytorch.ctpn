@@ -75,7 +75,7 @@ It should be noted that you must ensure that your GPU memory supports maximum ed
 
 
 
-#reference
+# reference
 
  1. https://github.com/eragonruan/text-detection-ctpn
  2. https://github.com/AstarLight/Lets_OCR/tree/master/detector/ctpn
