@@ -14,7 +14,7 @@ It will generate a nms.so and a bbox.so in current folder.
 ***
 # how to test
 - follow setup to build the library 
-- download the test model  from  [baidu yun](https://pan.baidu.com/s/17FlYxGhEVLbIWcgMeusJDg)
+- download the test model
 - change you own model_path , dir_path and save_path in inference.py
 ```
 python3 inference.py
