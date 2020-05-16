@@ -25,7 +25,7 @@ python3 inference.py
 | base_model | Model_size(M) | model_file|
 | - | - | - |
 | vgg16_bn | 67.7 | [baiduyun](https://pan.baidu.com/s/12Oyew-ROVr5ipmvIovgeyA)(extract code: 5pgy) |
-| resnet50 | 137 | [baiduyun](https://pan.baidu.com/s/12Oyew-ROVr5ipmvIovgeyA (extract code: 5pgy) |
+| resnet50 | 137 | [baiduyun](https://pan.baidu.com/s/12Oyew-ROVr5ipmvIovgeyA)(extract code: 5pgy) |
 | shufflenet_v2_x1_0 | 25.4 | [baiduyun](https://pan.baidu.com/s/12Oyew-ROVr5ipmvIovgeyA(extract code: 5pgy) |
 | mobilenet_v3_large | 16.9 | [baiduyun](https://pan.baidu.com/s/12Oyew-ROVr5ipmvIovgeyA(extract code: 5pgy) |
 | mobilenet_v3_small | 13.5 | [baiduyun](https://pan.baidu.com/s/12Oyew-ROVr5ipmvIovgeyA(extract code: 5pgy) |
