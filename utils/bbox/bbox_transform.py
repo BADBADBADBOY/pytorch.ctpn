@@ -34,7 +34,7 @@ def bbox_transform(ex_rois, gt_rois):
     return targets
 
 
-def bbox_transform_inv(boxes, deltas):
+def bbox_transform_inv(boxes, deltas,refine_deltas):
     boxes = boxes.astype(deltas.dtype, copy=False)
 
     widths = boxes[:, 2] - boxes[:, 0] + 1.0
@@ -42,12 +42,12 @@ def bbox_transform_inv(boxes, deltas):
     ctr_x = boxes[:, 0] + 0.5 * widths
     ctr_y = boxes[:, 1] + 0.5 * heights
 
-    dx = deltas[:, 0::4]
+    dx = refine_deltas
     dy = deltas[:, 1::4]
     dw = deltas[:, 2::4]
     dh = deltas[:, 3::4]
 
-    pred_ctr_x = ctr_x[:, np.newaxis]+dx * widths[:, np.newaxis]
+    pred_ctr_x = ctr_x[:, np.newaxis]#+dx * widths[:, np.newaxis]
     pred_ctr_y = dy * heights[:, np.newaxis] + ctr_y[:, np.newaxis]
     pred_w = widths[:, np.newaxis]
     pred_h = np.exp(dh) * heights[:, np.newaxis]

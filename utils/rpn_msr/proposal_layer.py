@@ -9,7 +9,7 @@ from utils.rpn_msr.generate_anchors import generate_anchors
 DEBUG = False
 
 
-def proposal_layer(rpn_cls_prob_reshape, rpn_bbox_pred, im_info, _feat_stride=[16, ], anchor_scales=[16, ]):
+def proposal_layer(rpn_cls_prob_reshape, rpn_bbox_pred, refine_ment,im_info, _feat_stride=[16, ], anchor_scales=[16, ]):
     """
     Parameters
     ----------
@@ -62,8 +62,8 @@ def proposal_layer(rpn_cls_prob_reshape, rpn_bbox_pred, im_info, _feat_stride=[1
     # 提取到object的分数，non-object的我们不关心
 
     bbox_deltas = rpn_bbox_pred  # 模型输出的pred是相对值，需要进一步处理成真实图像中的坐标
-    # im_info = bottom[2].data[0, :]
-
+    refine_deltas = refine_ment
+    
     if DEBUG:
         print('im_size: ({}, {})'.format(im_info[0], im_info[1]))
         print('scale: {}'.format(im_info[2]))
@@ -99,12 +99,12 @@ def proposal_layer(rpn_cls_prob_reshape, rpn_bbox_pred, im_info, _feat_stride=[1
     # reshape to (1 * H * W * A, 4) where rows are ordered by (h, w, a)
     # in slowest to fastest order
     bbox_deltas = bbox_deltas.reshape((-1, 4))  # (HxWxA, 4)
-
+    refine_deltas = refine_deltas.reshape((-1,1))
     # Same story for the scores:
     scores = scores.reshape((-1, 1))
 
     # Convert anchors into proposals via bbox transformations
-    proposals = bbox_transform_inv(anchors, bbox_deltas)  # 做逆变换，得到box在图像上的真实坐标
+    proposals = bbox_transform_inv(anchors, bbox_deltas,refine_deltas)  # 做逆变换，得到box在图像上的真实坐标
 
     # 2. clip predicted boxes to image
     proposals = clip_boxes(proposals, im_info[:2])  # 将所有的proposal修建一下，超出图像范围的将会被修剪掉
