@@ -61,11 +61,20 @@ vgg11_bn, vgg16, vgg16_bn, vgg19, vgg19_bn, resnet18, resnet34 ,resnet50, resnet
 3. Support batch training
 4. When the size_list has multiple values, the maximum edge of the training picture will be randomly zoomed when training. 
 It should be noted that you must ensure that your GPU memory supports maximum edge scaling.
+***
 
+# performance
+##### only train on icdar2015
 
+| rescall | prediction | hmean|
+| - | - | - |
+|  0.4058 |  0.6117| 0.4879|
+
+## some results in icdar2015
+<img src="./result/21.jpg" width=320 height=480 />     <img src="./result/22.jpg" width=320 height=480 />
 
 ***
-# some results in MTWI2018
+## some results in MTWI2018
 <img src="./result/1.jpg" width=320 height=480 />     <img src="./result/2.jpg" width=320 height=480 />
 <img src="./result/3.jpg" width=320 height=480 />     <img src="./result/4.jpg" width=320 height=480 />
 <img src="./result/5.jpg" width=320 height=480 />     <img src="./result/9.jpg" width=320 height=480 />
