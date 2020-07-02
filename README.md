@@ -4,6 +4,11 @@
 
 my blog about CTPN [blog](https://blog.csdn.net/fxwfxw7037681/article/details/103897907)
 
+# Conlusion
+
+Ctpn works better for horizontal text, but worse for oblique and curved text.If you are interested in text detection and model compression, 
+you can pay attention to the two projects I will do next, [psenet](https://github.com/BADBADBADBOY/pse-lite.pytorch) and [DBNet](https://github.com/BADBADBADBOY/DBnet-lite.pytorch)
+
 # setup
 nms and bbox utils are written in cython, you have to build the library first.
 ```shell
