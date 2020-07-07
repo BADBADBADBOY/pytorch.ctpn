@@ -20,8 +20,8 @@ def resize_image(img,max_size,color=(0,0,0)):
     img_size = img.shape
     im_size_max = np.max(img_size[0:2])
     im_scale = float(max_size) / float(im_size_max)
-    new_h = int(img_size[0] * im_scale)
-    new_w = int(img_size[1] * im_scale)
+    new_h = np.round(img_size[0] * im_scale).astype(np.int)
+    new_w = np.round(img_size[1] * im_scale).astype(np.int)
 
     new_h = new_h if new_h // 16 == 0 else (new_h // 16 + 1) * 16
     new_w = new_w if new_w // 16 == 0 else (new_w // 16 + 1) * 16
